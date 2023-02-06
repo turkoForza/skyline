@@ -1,0 +1,15 @@
+%btn {
+    width: 10rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 0.25rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        color: red;
+        background-color: white;
+        transition: 0.5s all;
+    }
+}

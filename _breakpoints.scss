@@ -1,0 +1,46 @@
+@media (max-width:800px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    #collapse{
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+
+        .right{
+           img:first-child{
+                    max-inline-size: 50%;                
+                }  
+        }
+    }
+
+    .page-2{
+
+        .up{
+            padding: 2rem;
+            gap: 5rem;
+        }
+
+        .down{
+            overflow-x: hidden;
+            padding: 2rem;
+            .models{
+                scale: 0.35;
+                background-color: $base-l-color;
+            }
+        }
+    }
+
+    .page-3{
+        .last-info{
+            flex-direction: column;
+        }
+    }
+
+}
+
+    

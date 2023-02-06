@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Revalia&family=Yaldevi:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  border: none;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Revalia", cursive;
+}
+
+p, a {
+  font-family: "Yaldevi", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #EAEAEA;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #D6D6D6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  #collapse {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .right img:first-child {
+    max-inline-size: 50%;
+  }
+  .page-2 .up {
+    padding: 2rem;
+    gap: 5rem;
+  }
+  .page-2 .down {
+    overflow-x: hidden;
+    padding: 2rem;
+  }
+  .page-2 .down .models {
+    scale: 0.35;
+    background-color: #EAEAEA;
+  }
+  .page-3 .last-info {
+    flex-direction: column;
+  }
+}
+.page-3 .exterior button, .page-2 .down button, .page-2 .up button, .page-1 .left button {
+  width: 10rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 0.25rem;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.page-3 .exterior button:hover, .page-2 .down button:hover, .page-2 .up button:hover, .page-1 .left button:hover {
+  color: red;
+  background-color: white;
+  transition: 0.5s all;
+}
+
+.navbar {
+  height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 1;
+}
+.navbar img {
+  height: 80%;
+}
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+.navbar ul li:not(:last-child) {
+  padding-right: 1rem;
+  border-right: 0.15rem solid black;
+}
+.navbar ul li a {
+  color: black;
+  font-weight: bolder;
+}
+.navbar ul li a:hover {
+  text-shadow: 0.125rem 0.125rem 0.5rem red;
+}
+.navbar ul li a:first-child {
+  font-size: 1rem;
+}
+.navbar ul li a:last-child {
+  font-size: 0.8rem;
+}
+
+/* PAGE-1*/
+.page-1 {
+  height: 90vh;
+  background: linear-gradient(#D6D6D6 50%, #EAEAEA 50%);
+  display: flex;
+}
+.page-1 .left {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.page-1 .left img {
+  max-width: 15rem;
+  mix-blend-mode: darken;
+  position: relative;
+  top: 3rem;
+}
+.page-1 .right {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.page-1 .right img:first-child {
+  width: 100%;
+}
+.page-1 .right img:first-child:hover {
+  transform: translate(-2rem, 2rem);
+  transition: all 2s;
+}
+
+#track {
+  width: 50%;
+  mix-blend-mode: darken;
+}
+
+/* PAGE-2*/
+.page-2 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.page-2 .up {
+  background: url(/images/interior.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page-2 .up button {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.page-2 .down {
+  background-color: #EAEAEA;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page-2 .down h1 span {
+  color: red;
+}
+.page-2 .down .models {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-2 .down .models img {
+  height: 300px;
+  mix-blend-mode: darken;
+}
+.page-2 .down button {
+  background-color: aquamarine;
+}
+
+/* PAGE-3*/
+.page-3 {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.page-3 .exterior {
+  background: url(/images/exterior.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page-3 .exterior button {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.page-3 .last-info {
+  background-color: black;
+  color: white;
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+.page-3 .last-info img {
+  width: 20%;
+}
+.page-3 .last-info p {
+  text-align: justify;
+}
+
+footer {
+  height: 5vh;
+  color: white;
+  background-color: rgba(197, 73, 73, 0.781);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
