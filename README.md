@@ -4,4 +4,4 @@
 
 <p>SCSS</p>
 
-<img src="/images/ekran.gif">
+<img src="/images/screen.gif">
